@@ -27,6 +27,10 @@ dependencies:
   flutter_screenutil: ^0.4.1
   image_picker: ^0.6.7
   popup_menu:
+  dio:
+  sqflite:
+  path_provider:  
+
 
 dev_dependencies:
   flutter_test:

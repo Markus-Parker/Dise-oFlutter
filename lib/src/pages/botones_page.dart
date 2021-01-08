@@ -91,11 +91,11 @@ class BotonesPage extends StatelessWidget {
     return Table(
       children: [
         TableRow(children: [
-          icono(context, 'Lista', 'list'),
+          icono(context, 'Sqlite', 'sqlite'),
           icono(context, 'Video', 'video'),
         ]),
         TableRow(children: [
-          icono(context, 'Login', 'login'),
+          icono(context, 'Home', 'home'),
           icono(context, 'Imagen', 'image'),
         ])
       ],

@@ -9,6 +9,8 @@ import 'package:disenos/src/pages/list.dart';
 import 'package:disenos/src/pages/video.dart';
 import 'package:disenos/src/pages/login.dart';
 import 'package:disenos/src/pages/image.dart';
+import 'package:disenos/src/pages/home_page.dart';
+import 'package:disenos/src/ui/sqlite.dart';
 
 void main() => runApp(MyApp());
 
@@ -31,6 +33,8 @@ class MyApp extends StatelessWidget {
         'video': (BuildContext context) => VideoApp(),
         'login': (BuildContext context) => Login(),
         'image': (BuildContext context) => Imagen(),
+        'home': (BuildContext context) => HomePage(),
+        'sqlite': (BuildContext context) => Sqlite(),
       },
     );
   }
