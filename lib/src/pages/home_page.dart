@@ -1,5 +1,5 @@
 import 'package:disenos/src/providers/db_provider.dart';
-import 'package:disenos/src/providers/employee_api_provider.dart';
+import 'package:disenos/src/providers/peces_api_provider.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -97,9 +97,9 @@ class _HomePageState extends State<HomePage> {
             itemCount: snapshot.data.length,
             itemBuilder: (BuildContext context, int index) {
               return ListTile(
-                leading: Text(
-                  "${index + 1}",
-                  style: TextStyle(fontSize: 20.0),
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      "${snapshot.data[index].imagen}"), // no matter how big it is, it won't overflow
                 ),
                 title: Text(
                     "Nombre: ${snapshot.data[index].nombre}       Habitat: ${snapshot.data[index].habitat} "),

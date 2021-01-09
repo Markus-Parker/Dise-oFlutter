@@ -25,14 +25,14 @@ class Sqlite extends StatelessWidget {
         resizeToAvoidBottomPadding: false,
         body: SafeArea(
             child: Container(
-                color: Colors.white,
+                color: Color.fromRGBO(246, 241, 229, 1.0),
                 padding:
                     const EdgeInsets.only(left: 2.0, right: 2.0, bottom: 2.0),
                 child: Container(
                     //This is where the magic starts
                     child: getTodosWidget()))),
         bottomNavigationBar: BottomAppBar(
-          color: Colors.white,
+          color: Color.fromRGBO(246, 241, 229, 1.0),
           child: Container(
             decoration: BoxDecoration(
                 border: Border(
@@ -44,7 +44,7 @@ class Sqlite extends StatelessWidget {
                 IconButton(
                     icon: Icon(
                       Icons.menu,
-                      color: Colors.indigoAccent,
+                      color: Colors.brown,
                       size: 28,
                     ),
                     onPressed: () {
@@ -67,7 +67,7 @@ class Sqlite extends StatelessWidget {
                     icon: Icon(
                       Icons.search,
                       size: 28,
-                      color: Colors.indigoAccent,
+                      color: Colors.brown,
                     ),
                     onPressed: () {
                       _showTodoSearchSheet(context);
@@ -93,7 +93,7 @@ class Sqlite extends StatelessWidget {
             child: Icon(
               Icons.add,
               size: 32,
-              color: Colors.indigoAccent,
+              color: Colors.brown,
             ),
           ),
         ));
@@ -137,7 +137,7 @@ class Sqlite extends StatelessWidget {
                                   hintText: 'I have to...',
                                   labelText: 'New Todo',
                                   labelStyle: TextStyle(
-                                      color: Colors.indigoAccent,
+                                      color: Colors.brown,
                                       fontWeight: FontWeight.w500)),
                               validator: (String value) {
                                 if (value.isEmpty) {
@@ -353,12 +353,12 @@ class Sqlite extends StatelessWidget {
                                   ? Icon(
                                       Icons.done,
                                       size: 26.0,
-                                      color: Colors.indigoAccent,
+                                      color: Colors.green,
                                     )
                                   : Icon(
                                       Icons.check_box_outline_blank,
                                       size: 26.0,
-                                      color: Colors.tealAccent,
+                                      color: Colors.brown,
                                     ),
                             ),
                           ),

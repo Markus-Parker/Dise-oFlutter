@@ -1,4 +1,4 @@
-import 'package:disenos/src/models/employee_model.dart';
+import 'package:disenos/src/models/peces_model.dart';
 import 'package:disenos/src/providers/db_provider.dart';
 import 'package:dio/dio.dart';
 
